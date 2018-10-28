@@ -15,9 +15,9 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 object QuarticTest{
   def main(args: Array[String]) {    
     
-    val sparkConf = new SparkConf().setAppName("NetworkWordCount")
+    val sparkConf = new SparkConf().setAppName("QuaritcTest")
     
-    val sc =new SparkContext("local[*]","NetworkWordCount")
+    val sc =new SparkContext("local[*]","QuarticTest")
 
     val gbt = new GBTRegressor().setLabelCol("Label").setFeaturesCol("indexedFeatures").setMaxIter(10)
 
